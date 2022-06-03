@@ -1,75 +1,74 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 #root {
-  background: rgb(67, 85, 100);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(37, 150, 146);
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.calculator {
+  max-width: 320px;
+  margin: 0 auto;
+}
 .heading {
-  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 12px 12px 0 0;
+  background-color: rgb(39, 94, 146);
   font-weight: bold;
   color: white;
   padding-left: 4px;
-  background: rgb(54, 58, 75);
-}
-
-.calculator {
-  background: none;
-  max-width: 320px;
-  margin: 0 auto;
-  border: 2px solid #111;
-  border-radius: 10px;
 }
 
 .calculator input {
-  background: rgb(32, 29, 29);
+  background: rgb(39, 94, 146);
   border: none;
-  margin-bottom: 8px;
   box-shadow: none;
   width: 100%;
-  border-bottom: 2px solid #111;
-  border-radius: 4px;
-  padding: 20px;
+  padding: 10px;
   text-align: right;
   font-size: 40px;
   font-weight: bold;
   color: white;
 }
+input:focus {
+  outline: none;
+}
 
 .calculator-buttons {
-  background: rgb(39, 38, 38);
-  border-radius: 8px;
+  border-radius: 0 0 12px 12px;
+  background: #a5becc;
   padding: 13px;
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(4, 1fr);
   grid-gap: 10px;
 }
 .calc-button {
-  background: rgb(228, 225, 225);
-  border: 1px solid #111;
+  background: rgb(91, 41, 206);
+  border: 0.5px solid rgb(43, 42, 42);
   padding: 10px;
-  color: black;
-  border-radius: 7px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 60%;
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
 }
 .is-reset {
+  border-radius: 10px;
   grid-column: span 2;
-  background: grey;
+  background: rgb(224, 79, 79);
 }
 
 .is-equals {
   grid-column: span 2;
-  background: red;
+  color: black;
+  background: #c6dce4;
+  border-radius: 10px;
 }
 
 .is-del {
-  background: grey;
+  background: rgb(179, 11, 142);
 }
 
 .heading-calc {
   white-space: nowrap;
-  /* width: 140%; */
+  background-color: inherit;
 }
